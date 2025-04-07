@@ -1,4 +1,4 @@
-import Openai
+import openai
 import streamlit as st
 
 st.title("shahmeer-GPT")
