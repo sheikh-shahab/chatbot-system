@@ -3,7 +3,7 @@ import streamlit as st
 
 st.title("shahmeer-GPT")
 
-client = openai(api_key=st.secrets["OPENAI_API_KEY"])
+client = openai.OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 if "openai_model" not in st.session_state:
     st.session_state["openai_model"] = "gpt-4o-mini"
